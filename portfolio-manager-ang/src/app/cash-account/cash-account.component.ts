@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CashAccountService} from 'src/services/cash-account.service';
 
 @Component({
   selector: 'app-cash-account',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CashAccountComponent implements OnInit {
 
-  constructor() { }
+  reportData = {}
+  constructor(private cashAccountService:CashAccountService) { }
 
   ngOnInit(): void {
+    this.cashAccountService.getCashData().subscribe((data)=>
+      console.warn('get data', data)
+    )
   }
+
+
 
 }
