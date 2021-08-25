@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4be8c36f-bd3e-4ed8-91ba-a1903cdef369" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +109,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1451" y="176" key="SettingsEditor/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629896997965" />
+    <state x="-1260" y="166" width="600" height="711" key="find.popup" timestamp="1629927164493">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1260" y="166" width="600" height="711" key="find.popup/-1920.25.1920.1055/1680.141.1080.785/0.25.1680.964@-1920.25.1920.1055" timestamp="1629927164493" />
     <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog" timestamp="1629924746778">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
