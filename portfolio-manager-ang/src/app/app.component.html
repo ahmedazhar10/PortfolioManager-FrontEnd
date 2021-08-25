@@ -9,8 +9,11 @@
       <div class="navbar-header">
         <a class="navbar-brand">
         </a>
-<!--        <span class="navbar-brand">Angular + Bootstrap</span>-->
-<!--        <span> <a routerLink="/cash-account">Cash Accounts</a></span>-->
+
+        <span class="navbar-brand">Angular + Bootstrap</span>
+        <span> <a routerLink="/cash-account)">Cash Accounts</a></span> |
+        <span> <a routerLink="/investment">Investments</a></span>
+
       </div>
     </div>
   </nav>
@@ -19,6 +22,7 @@
     <h1 class="text-white normal_font">Citi Financial Portfolio Manager</h1>
     <p class="lead">
     </p>
+    <router-outlet></router-outlet>
   </div>
 
   <div class = "container">
@@ -60,6 +64,7 @@
       </div>
       <div class="col">
         <h3>Investment Breakdown</h3>
+        <router-outlet name="investment"></router-outlet>
       </div>
       <div class="col">
         <h3>Cash Accounts</h3>
