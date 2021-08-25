@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be8c36f-bd3e-4ed8-91ba-a1903cdef369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="yiheng" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1xDjktZWQbYE3LO65C7eK9BApSu" />
@@ -108,5 +108,9 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1451" y="176" key="SettingsEditor/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629896997965" />
+    <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog" timestamp="1629924746778">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629924746778" />
   </component>
 </project>
