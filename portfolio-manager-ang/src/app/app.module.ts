@@ -9,6 +9,8 @@ import { FutureComponent } from './future/future.component';
 import { EtfComponent } from './etf/etf.component';
 import { CashAccountComponent } from './cash-account/cash-account.component';
 import { NetWorthComponent } from './net-worth/net-worth.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { NetWorthComponent } from './net-worth/net-worth.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
