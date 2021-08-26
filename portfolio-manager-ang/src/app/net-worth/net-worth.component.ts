@@ -34,13 +34,16 @@ export class NetWorthComponent implements OnInit {
     this.imgChart = './assets/pieChart.png'
   }
 
-  showHarry(){
+  showHarry() {
     this.imgHarry = './assets/harryKane.jpeg'
     this.home = "ITS COMING HOME"
 
-  calculateTotalNetWorth(){
-    this.totalNetWorth = 962456.08
   }
+    calculateTotalNetWorth()
+    {
+      this.totalNetWorth = 962456.08
+    }
+
 
 
 }
