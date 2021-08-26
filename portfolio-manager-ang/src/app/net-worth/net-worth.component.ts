@@ -10,6 +10,9 @@ import {NetWorthService} from 'src/services/net-worth.service';
 export class NetWorthComponent implements OnInit {
 
   public netWorthData: any = [{}]
+  public imgChart:any = null
+  public imgHarry:any = null
+  public home:any = null
   
   constructor(private netWorthService:NetWorthService) { }
   ngOnInit(): void {
@@ -21,6 +24,15 @@ export class NetWorthComponent implements OnInit {
       console.log(this.netWorthData[0].cashAccounts.institution);
     })
     //console.log(this.netWorthData);
+  }
+
+  showImg(){
+    this.imgChart = './assets/pieChart.png'
+  }
+
+  showHarry(){
+    this.imgHarry = './assets/harryKane.jpeg'
+    this.home = "ITS COMING HOME"
   }
 
 
