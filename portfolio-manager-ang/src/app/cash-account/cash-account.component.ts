@@ -9,6 +9,7 @@ import {CashAccountService} from 'src/services/cash-account.service';
 export class CashAccountComponent implements OnInit {
 
   public cashAccountData = []
+  public totalAmount = 0
   constructor(private cashAccountService:CashAccountService) { }
   ngOnInit(): void {
   }
@@ -19,5 +20,14 @@ export class CashAccountComponent implements OnInit {
       console.log(this.cashAccountData[0]);
     })
     }
+
+  addAllCashAmounts(){
+      this.totalAmount = 0
+      
+      for(let i=0; i<this.cashAccountData.length; i++){
+          let val = this.cashAccountData[i]['amount']
+          this.totalAmount += val
+        }
+  }
 
 }
