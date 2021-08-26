@@ -27,7 +27,8 @@ export class InvestmentComponent implements OnInit {
     this.total = 0
     if(this.paramObj.category == 'stock'){
       for(let i=0; i<this.reportData.length; i++){
-        this.total += this.reportData[i].closingPrice
+        let val = this.reportData[i].volume * this.reportData[i].closingPrice
+        this.total += val
       }
     }
 
