@@ -1,29 +1,35 @@
 <section>
-    <form>
-        <div class="form-group">
-            <label for="formSelect">Select Investment</label>
-            <select [(ngModel)]="paramObj.category" name="category"  class="form-control" id="formSelect">
-                <option value="stock">Stocks</option>
-                <option value="bond">Bonds</option>
-                <option value="etf">Futures</option>
-                <option value="future">ETFs</option>
-            </select>
+    <div class="card w-75">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="formSelect">Select Investment</label>
+                    <select [(ngModel)]="paramObj.category" name="category"  class="form-control" id="formSelect">
+                        <option value="">Select</option>
+                        <option value="stock">Stocks</option>
+                        <option value="bond">Bonds</option>
+                        <option value="etf">Futures</option>
+                        <option value="future">ETFs</option>
+                    </select>
+                </div>
+            </form>
+            <button (click)="makeServiceCall()" type="button" class="btn btn-outline-primary">Go</button>
+            <br>
+            <br>
+            <div *ngFor="let data of reportData">
+                <h3>
+                    <span *ngIf="paramObj.category === 'stock'">{{data.ticker}}  {{data.closingPrice | currency}}</span>
+                    <span *ngIf="data.hasOwnProperty('coupon')">{{data.issuer}}   {{data.coupon | currency}}</span>
+                    <span *ngIf="data.hasOwnProperty('margin')">{{data.issuer}}   {{data.contractValue | currency}}</span>
+                    <span *ngIf="data.hasOwnProperty('aum')">{{data.symbol}}   {{data.ytdReturn | currency}}</span>
+                </h3>
+            </div>
+            <br>
+            <br>
+            <button (click)="addInvestments()" type="button" class="btn btn-outline-primary">Cumulative Amount</button>
+            <h3 class="total">{{total | currency}}</h3>
         </div>
-    </form>
-
-    <button (click)="makeServiceCall()" type="button" class="btn btn-outline-primary">Go</button>
-    <div *ngFor="let data of reportData">
-        <h3>
-          <span *ngIf="data.hasOwnProperty('ticker')">{{data.ticker}} | ${{data.purchasePrice}}</span>
-            <span *ngIf="data.hasOwnProperty('coupon')">{{data.issuer}} | ${{data.coupon}}</span>
-            <span *ngIf="data.hasOwnProperty('margin')">{{data.issuer}} | ${{data.contractValue}}</span>
-            <span *ngIf="data.hasOwnProperty('aum')">{{data.symbol}} | ${{data.ytdReturn}}</span>
-        </h3>
     </div>
-
-    <button (click)="addInvestments()" type="button" class="btn btn-outline-primary">total</button>
-
-
 </section>
 
 

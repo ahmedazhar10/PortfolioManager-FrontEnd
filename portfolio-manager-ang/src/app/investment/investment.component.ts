@@ -9,11 +9,8 @@ import {InvestmentService} from "../../services/investment.service";
 export class InvestmentComponent implements OnInit {
 
   public reportData: any = [{}]
-  paramObj = {category:'stock'}
-  stockTotal = 0
-  bondTotal = 0
-  etfTotal:number = 0
-  futureTotal:number = 0
+  paramObj = {category:''}
+  total = 0
 
   constructor(private investmentService:InvestmentService) { }
 
@@ -27,30 +24,27 @@ export class InvestmentComponent implements OnInit {
   }
 
   addInvestments(){
+    this.total = 0
     if(this.paramObj.category == 'stock'){
       for(let i=0; i<this.reportData.length; i++){
-        this.stockTotal += this.reportData[i].closingPrice
+        this.total += this.reportData[i].closingPrice
       }
-      console.log(this.stockTotal)
     }
 
     else if(this.paramObj.category == 'bond'){
       for(let i=0; i<this.reportData.length; i++){
-        this.bondTotal += this.reportData[i].coupon
+        this.total += this.reportData[i].coupon
       }
-      console.log(this.bondTotal)
     }
     else if(this.paramObj.category == 'future'){
       for(let i=0; i<this.reportData.length; i++){
-        this.futureTotal += this.reportData[i].contractValue
+        this.total += this.reportData[i].contractValue
       }
-      console.log(this.futureTotal)
     }
     else if(this.paramObj.category == 'etf'){
       for(let i=0; i<this.reportData.length; i++){
-        this.etfTotal += this.reportData[i].ytdReturncoupon
+        this.total += this.reportData[i].ytdReturncoupon
       }
-      console.log(this.etfTotal)
     }
   }
 
