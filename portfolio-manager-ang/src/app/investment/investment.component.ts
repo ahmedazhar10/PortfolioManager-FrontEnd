@@ -8,8 +8,9 @@ import {InvestmentService} from "../../services/investment.service";
 })
 export class InvestmentComponent implements OnInit {
 
-  public reportData = {}
-  paramObj = {category:'stock'}
+  public reportData: any = [{}]
+  paramObj = {category:''}
+  total = 0
 
   constructor(private investmentService:InvestmentService) { }
 
@@ -18,8 +19,39 @@ export class InvestmentComponent implements OnInit {
 
   makeServiceCall(){
     this.investmentService.getInvestData(this.paramObj).subscribe((data:any)=>{
-      this.reportData = JSON.stringify(data)
+      this.reportData = data
     })
   }
+
+  addInvestments(){
+    this.total = 0
+    if(this.paramObj.category == 'stock'){
+      for(let i=0; i<this.reportData.length; i++){
+        this.total += this.reportData[i].closingPrice
+      }
+    }
+
+    else if(this.paramObj.category == 'bond'){
+      for(let i=0; i<this.reportData.length; i++){
+        this.total += this.reportData[i].coupon
+      }
+    }
+    else if(this.paramObj.category == 'future'){
+      for(let i=0; i<this.reportData.length; i++){
+        this.total += this.reportData[i].contractValue
+      }
+    }
+    else if(this.paramObj.category == 'etf'){
+      for(let i=0; i<this.reportData.length; i++){
+        this.total += this.reportData[i].ytdReturncoupon
+      }
+    }
+  }
+
+
+
+
+
+
 
 }
