@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NetWorthService} from 'src/services/net-worth.service';
 
 @Component({
   selector: 'app-net-worth',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NetWorthComponent implements OnInit {
 
-  constructor() { }
+  public netWorthData = {}
+  constructor(private netWorthService:NetWorthService) { }
 
   ngOnInit(): void {
   }
+
+  netWorthServiceCall(){
+    this.netWorthService.getNetWorthData().subscribe((data:any)=> {
+      this.netWorthData = JSON.stringify(data)
+    })
+  }
+
 
 }
