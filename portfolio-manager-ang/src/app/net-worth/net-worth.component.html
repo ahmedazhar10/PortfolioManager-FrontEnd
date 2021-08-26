@@ -13,13 +13,13 @@
   </thead>
   <tbody>
     <!-- <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> -->
-    <tr *ngFor="let data of netWorthData">
-        <th scope="row">{{data.id}}</th> <!-- ID -->
-        <td>{{ data.userName }}</td> <!-- Name -->
+    <tr>
+        <th scope="row">{{netWorthData[0].id}}</th> <!-- ID -->
+        <td>{{ netWorthData[0].userName }}</td> <!-- Name -->
       <!-- <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> -->
-        <td>{{ data['cashAccounts'] ? data.cashAccounts.institution :''}}</td>  <!-- Institution -->
-        <td>{{ data['cashAccounts'] ? data.cashAccounts.accountType : ''}}</td> <!-- Account Type -->
-        <td>{{ data['cashAccounts'] ? data.cashAccounts.amount : ''}}</td><!-- Amount -->
+        <td>{{ netWorthData[0]['cashAccounts'] ? netWorthData[0].cashAccounts.institution :''}}</td>  <!-- Institution -->
+        <td>{{ netWorthData[0]['cashAccounts'] ? netWorthData[0].cashAccounts.accountType : ''}}</td> <!-- Account Type -->
+        <td>{{ netWorthData[0]['cashAccounts'] ? netWorthData[0].cashAccounts.amount : ''}}</td><!-- Amount -->
     </tr>
   </tbody>
 </table>
