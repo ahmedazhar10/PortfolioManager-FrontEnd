@@ -1,0 +1,16 @@
+<section>
+    <form>
+        <div class="form-group">
+            <label for="formSelect">Select Investment</label>
+            <select [(ngModel)]="paramObj.category" name="category"  class="form-control" id="formSelect">
+                <option value="stock">Stocks</option>
+                <option value="bond">Bonds</option>
+                <option value="etf">Futures</option>
+                <option value="future">ETFs</option>
+            </select>
+        </div>
+    </form>
+
+    <button (click)="makeServiceCall()" type="button" class="btn btn-outline-primary">Go</button>
+    <p>{{reportData ? reportData:reportData}}</p>
+</section>
