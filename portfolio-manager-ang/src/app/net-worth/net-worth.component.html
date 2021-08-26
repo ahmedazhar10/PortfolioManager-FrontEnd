@@ -1,1 +1,32 @@
 <p>net-worth works!</p>
+
+<button (click)="netWorthServiceCall()">Get Net Worth</button>
+<!-- <p>{{netWorthData ? netWorthData:netWorthData}}</p> -->
+
+
+<!-- <table class="table"> -->
+<ng-container *ngIf="netWorthData.length != 0">
+<table class="table"> <!-- table-striped -->
+  <!-- <thead class="thead-dark"> -->
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Institution</th>
+      <th scope="col">Account Type</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> -->
+    <tr *ngFor="let data of netWorthData">
+        <th scope="row">{{data.id}}</th> <!-- ID -->
+        <td>{{ data.userName }}</td> <!-- Name -->
+      <!-- <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> -->
+        <td>{{ data['cashAccounts'] ? data.cashAccounts.institution :''}}</td>  <!-- Institution -->
+        <td>{{ data['cashAccounts'] ? data.cashAccounts.accountType : ''}}</td> <!-- Account Type -->
+        <td>{{ data['cashAccounts'] ? data.cashAccounts.amount : ''}}</td><!-- Amount -->
+    </tr>
+  </tbody>
+</table>
+</ng-container>
