@@ -1,3 +1,18 @@
 .total{
     color:green;
 }
+
+.heading{
+    padding-left:90px;
+}
+
+.issuer{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.amt{
+    font-weight:bold;
+    padding-left:60px;
+    text-decoration: underline;
+}
