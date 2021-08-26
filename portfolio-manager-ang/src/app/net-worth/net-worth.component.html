@@ -25,7 +25,20 @@
     </tr>
   </tbody>
 </table>
+
+    <br>
+    <button type="button" class="btn btn-primary" (click)="calculateTotalNetWorth()">Net worth?</button>
+    <h3 class="total">{{totalNetWorth | currency}}</h3>
+
+    <button (click)="showImg()" type="button" class="btn btn-outline-primary">View Chart</button>
+    <img src="{{imgChart}}">
+    <br>
+    <br>
+    <br>
+    <button (click)="showHarry()" type="button" class="btn btn-outline-primary">Comments</button>
+    <img src="{{imgHarry}}">
+    <br>
+    <h3>{{home}}</h3>
+
 </ng-container>
-<br>
-<button type="button" class="btn btn-primary" (click)="calculateTotalNetWorth()">Net worth?</button>
-<h3 class="total">{{totalNetWorth | currency}}</h3>
+
