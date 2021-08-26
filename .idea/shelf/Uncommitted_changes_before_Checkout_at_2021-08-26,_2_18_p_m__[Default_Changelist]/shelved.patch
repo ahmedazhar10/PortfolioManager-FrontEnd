@@ -1,0 +1,84 @@
+Index: portfolio-manager-ang/src/app/app.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><html>\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Document</title>\n</head>\n<body>\n  <nav class=\"navbar navbar-default color navigation\">\n    <div class=\"container-fluid\">\n      <div class=\"navbar-header\">\n        <a class=\"navbar-brand\">\n        </a>\n\n        <span class=\"navbar-brand\">Angular + Bootstrap</span>\n        <span> <a routerLink=\"/cash-account)\">Cash Accounts</a></span> |\n        <span> <a routerLink=\"/investment\">Investments</a></span>\n\n      </div>\n    </div>\n  </nav>\n\n  <div class=\"jumbotron\">\n    <h1 class=\"text-white normal_font\">Citi Financial Portfolio Manager</h1>\n    <p class=\"lead\">\n    </p>\n    <router-outlet></router-outlet>\n  </div>\n\n  <div class = \"container\">\n    <div class=\"card-deck\">\n      <div class=\"row\">\n        <div class=\"card card_first_colour\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">Market Movers</h4>\n            <p class=\"card-text win_colour\">Citi</p>\n          </div>\n        </div>\n        <div class=\"card card_second_colour\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">Top Gainer</h4>\n            <p class=\"card-text\">Some example text. Some example text.</p>\n          </div>\n        </div>\n        <div class=\"card card_second_colour\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">Top Loser</h4>\n            <p class=\"card-text\">Some example text. Some example text.</p>\n          </div>\n        </div>\n        <div class=\"card card_first_colour\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">Insights</h4>\n            <p class=\"card-text\">Some example text. Some example text.</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"container2-fluid\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <h3>Net Worth</h3>\n      </div>\n      <div class=\"col\">\n        <h3>Investment Breakdown</h3>\n        <router-outlet name=\"investment\"></router-outlet>\n      </div>\n      <div class=\"col\">\n        <h3>Cash Accounts</h3>\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>\n\n\n\n\n\n\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- portfolio-manager-ang/src/app/app.component.html	(revision bee79c31be5eccd151988f0eb45157052c8187e4)
++++ portfolio-manager-ang/src/app/app.component.html	(date 1630001893942)
+@@ -75,8 +75,5 @@
+ 
+ 
+ 
+-
+-
+-
+ </body>
+ </html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4be8c36f-bd3e-4ed8-91ba-a1903cdef369\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"yiheng\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1xDjktZWQbYE3LO65C7eK9BApSu\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\n    <property name=\"ts.external.directory.path\" value=\"$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4be8c36f-bd3e-4ed8-91ba-a1903cdef369\" name=\"Default Changelist\" comment=\"\" />\n      <created>1629896700415</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1629896700415</updated>\n      <workItem from=\"1629896702471\" duration=\"329000\" />\n      <workItem from=\"1629897043208\" duration=\"56000\" />\n      <workItem from=\"1629897118260\" duration=\"4100000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"-1496\" y=\"200\" width=\"1071\" height=\"703\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1629898040074\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"-1496\" y=\"200\" width=\"1071\" height=\"703\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629898040074\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1629897614979\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614979\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.center\" timestamp=\"1629897614974\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.center/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614974\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.left\" timestamp=\"1629897614972\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.left/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614972\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.right\" timestamp=\"1629897614976\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.right/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614976\" />\n    <state x=\"-1451\" y=\"176\" key=\"SettingsEditor\" timestamp=\"1629896997965\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"-1451\" y=\"176\" key=\"SettingsEditor/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629896997965\" />\n    <state x=\"-1260\" y=\"166\" width=\"600\" height=\"711\" key=\"find.popup\" timestamp=\"1629927164493\">\n      <screen x=\"-1920\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state x=\"-1260\" y=\"166\" width=\"600\" height=\"711\" key=\"find.popup/-1920.25.1920.1055/1680.141.1080.785/0.25.1680.964@-1920.25.1920.1055\" timestamp=\"1629927164493\" />\n    <state x=\"-1203\" y=\"258\" key=\"git4idea.branch.GitSmartOperationDialog\" timestamp=\"1629924746778\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"-1203\" y=\"258\" key=\"git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629924746778\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision bee79c31be5eccd151988f0eb45157052c8187e4)
++++ .idea/workspace.xml	(date 1630001861797)
+@@ -21,7 +21,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="4be8c36f-bd3e-4ed8-91ba-a1903cdef369" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -89,22 +88,26 @@
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+     <state x="-1496" y="200" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629898040074" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1629897614979">
++    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1630000093214">
++      <screen x="-1920" y="0" width="1920" height="1080" />
++    </state>
++    <state width="1878" height="305" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630000093214" />
++    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1630000093206">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614979" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1629897614974">
++    <state width="1878" height="305" key="GridCell.Tab.0.center/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630000093206" />
++    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1630000093199">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.center/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614974" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1629897614972">
++    <state width="1878" height="305" key="GridCell.Tab.0.left/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630000093199" />
++    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1630000093209">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.left/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614972" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1629897614976">
++    <state width="1878" height="305" key="GridCell.Tab.0.right/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630000093209" />
++    <state x="-1632" y="106" key="MergeDialog" timestamp="1630001822351">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.right/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614976" />
++    <state x="-1632" y="106" key="MergeDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630001822351" />
+     <state x="-1451" y="176" key="SettingsEditor" timestamp="1629896997965">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+@@ -113,9 +116,9 @@
+       <screen x="-1920" y="25" width="1920" height="1055" />
+     </state>
+     <state x="-1260" y="166" width="600" height="711" key="find.popup/-1920.25.1920.1055/1680.141.1080.785/0.25.1680.964@-1920.25.1920.1055" timestamp="1629927164493" />
+-    <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog" timestamp="1629924746778">
++    <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog" timestamp="1630001816249">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629924746778" />
++    <state x="-1203" y="258" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630001816249" />
+   </component>
+ </project>
+\ No newline at end of file
