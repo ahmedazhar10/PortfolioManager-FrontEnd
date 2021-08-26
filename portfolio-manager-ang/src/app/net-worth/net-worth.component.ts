@@ -13,6 +13,9 @@ export class NetWorthComponent implements OnInit {
   public imgChart:any = null
   public imgHarry:any = null
   public home:any = null
+  public totalNetWorth = 0.00
+  public message = ""
+
   
   constructor(private netWorthService:NetWorthService) { }
   ngOnInit(): void {
@@ -26,6 +29,7 @@ export class NetWorthComponent implements OnInit {
     //console.log(this.netWorthData);
   }
 
+
   showImg(){
     this.imgChart = './assets/pieChart.png'
   }
@@ -33,6 +37,9 @@ export class NetWorthComponent implements OnInit {
   showHarry(){
     this.imgHarry = './assets/harryKane.jpeg'
     this.home = "ITS COMING HOME"
+
+  calculateTotalNetWorth(){
+    this.totalNetWorth = 962456.08
   }
 
 

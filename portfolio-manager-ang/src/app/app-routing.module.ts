@@ -11,7 +11,6 @@ const routes: Routes = [
   {path:'net-worth', component:NetWorthComponent},
   {path:'cash-account', component:CashAccountComponent},
   {path:'investment', component:InvestmentComponent, outlet:'investment'}
-
 ];
 
 @NgModule({

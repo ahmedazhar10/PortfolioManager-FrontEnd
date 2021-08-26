@@ -1,0 +1,82 @@
+Index: portfolio-manager-ang/src/app/app-routing.module.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CashAccountComponent } from \"./cash-account/cash-account.component\";\nimport { NetWorthComponent } from \"./net-worth/net-worth.component\";\nimport { InvestmentComponent } from \"./investment/investment.component\";\n\n\nconst routes: Routes = [\n  {path:'', redirectTo: '/cash-account', pathMatch:'full'},\n  {path:'cash-account', component:CashAccountComponent},\n  {path:'net-worth', component:NetWorthComponent},\n  {path:'cash-account', component:CashAccountComponent},\n  {path:'investment', component:InvestmentComponent, outlet:'investment'}\n\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- portfolio-manager-ang/src/app/app-routing.module.ts	(revision 02d61c00d2031b284dcb4e4c062976983f6d1e63)
++++ portfolio-manager-ang/src/app/app-routing.module.ts	(date 1630004673318)
+@@ -11,7 +11,6 @@
+   {path:'net-worth', component:NetWorthComponent},
+   {path:'cash-account', component:CashAccountComponent},
+   {path:'investment', component:InvestmentComponent, outlet:'investment'}
+-
+ ];
+ 
+ @NgModule({
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4be8c36f-bd3e-4ed8-91ba-a1903cdef369\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1xDjktZWQbYE3LO65C7eK9BApSu\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\n    <property name=\"ts.external.directory.path\" value=\"$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4be8c36f-bd3e-4ed8-91ba-a1903cdef369\" name=\"Default Changelist\" comment=\"\" />\n      <created>1629896700415</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1629896700415</updated>\n      <workItem from=\"1629896702471\" duration=\"329000\" />\n      <workItem from=\"1629897043208\" duration=\"56000\" />\n      <workItem from=\"1629897118260\" duration=\"4100000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"-1496\" y=\"200\" width=\"1071\" height=\"703\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1629898040074\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"-1496\" y=\"200\" width=\"1071\" height=\"703\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629898040074\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1629897614979\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614979\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.center\" timestamp=\"1629897614974\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.center/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614974\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.left\" timestamp=\"1629897614972\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.left/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614972\" />\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.right\" timestamp=\"1629897614976\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1878\" height=\"305\" key=\"GridCell.Tab.0.right/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629897614976\" />\n    <state x=\"-1451\" y=\"176\" key=\"SettingsEditor\" timestamp=\"1629896997965\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"-1451\" y=\"176\" key=\"SettingsEditor/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629896997965\" />\n    <state x=\"-1260\" y=\"166\" width=\"600\" height=\"711\" key=\"find.popup\" timestamp=\"1629927164493\">\n      <screen x=\"-1920\" y=\"25\" width=\"1920\" height=\"1055\" />\n    </state>\n    <state x=\"-1260\" y=\"166\" width=\"600\" height=\"711\" key=\"find.popup/-1920.25.1920.1055/1680.141.1080.785/0.25.1680.964@-1920.25.1920.1055\" timestamp=\"1629927164493\" />\n    <state x=\"-1203\" y=\"258\" key=\"git4idea.branch.GitSmartOperationDialog\" timestamp=\"1629924746778\">\n      <screen x=\"-1920\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state x=\"-1203\" y=\"258\" key=\"git4idea.branch.GitSmartOperationDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080\" timestamp=\"1629924746778\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 02d61c00d2031b284dcb4e4c062976983f6d1e63)
++++ .idea/workspace.xml	(date 1630004785408)
+@@ -21,7 +21,7 @@
+   <component name="ChangeListManager">
+     <list default="true" id="4be8c36f-bd3e-4ed8-91ba-a1903cdef369" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app-routing.module.ts" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -89,26 +89,38 @@
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+     <state x="-1496" y="200" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629898040074" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1629897614979">
++    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1630003200421">
++      <screen x="-1920" y="0" width="1920" height="1080" />
++    </state>
++    <state width="1878" height="305" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630003200421" />
++    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1630003200417">
++      <screen x="-1920" y="0" width="1920" height="1080" />
++    </state>
++    <state width="1878" height="305" key="GridCell.Tab.0.center/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630003200417" />
++    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1630003200415">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614979" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1629897614974">
++    <state width="1878" height="305" key="GridCell.Tab.0.left/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630003200415" />
++    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1630003200420">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.center/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614974" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1629897614972">
++    <state width="1878" height="305" key="GridCell.Tab.0.right/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630003200420" />
++    <state x="-1632" y="106" key="MergeDialog" timestamp="1630003315174">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.left/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614972" />
+-    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1629897614976">
++    <state x="-1632" y="106" key="MergeDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630003315174" />
++    <state x="-1232" y="481" key="MultipleFileMergeDialog" timestamp="1630003409139">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1878" height="305" key="GridCell.Tab.0.right/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629897614976" />
++    <state x="-1232" y="481" key="MultipleFileMergeDialog/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630003409139" />
+     <state x="-1451" y="176" key="SettingsEditor" timestamp="1629896997965">
+       <screen x="-1920" y="0" width="1920" height="1080" />
+     </state>
+     <state x="-1451" y="176" key="SettingsEditor/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629896997965" />
++    <state x="-1360" y="278" key="Vcs.Push.Dialog.v2" timestamp="1630004707384">
++      <screen x="-1920" y="0" width="1920" height="1080" />
++    </state>
++    <state x="-1360" y="278" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630004707384" />
+     <state x="-1260" y="166" width="600" height="711" key="find.popup" timestamp="1629927164493">
+       <screen x="-1920" y="25" width="1920" height="1055" />
+     </state>
