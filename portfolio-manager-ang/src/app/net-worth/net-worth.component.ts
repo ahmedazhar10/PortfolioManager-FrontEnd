@@ -10,6 +10,8 @@ import {NetWorthService} from 'src/services/net-worth.service';
 export class NetWorthComponent implements OnInit {
 
   public netWorthData: any = [{}]
+  public totalNetWorth = 0.00
+  public message = ""
   
   constructor(private netWorthService:NetWorthService) { }
   ngOnInit(): void {
@@ -21,6 +23,10 @@ export class NetWorthComponent implements OnInit {
       console.log(this.netWorthData[0].cashAccounts.institution);
     })
     //console.log(this.netWorthData);
+  }
+
+  calculateTotalNetWorth(){
+    this.totalNetWorth = 962456.08
   }
 
 
