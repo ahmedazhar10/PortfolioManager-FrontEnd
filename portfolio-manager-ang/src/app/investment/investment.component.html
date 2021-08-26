@@ -12,5 +12,22 @@
     </form>
 
     <button (click)="makeServiceCall()" type="button" class="btn btn-outline-primary">Go</button>
-    <p>{{reportData ? reportData:reportData}}</p>
+    <div *ngFor="let data of reportData">
+        <h3>
+          <span *ngIf="data.hasOwnProperty('ticker')">{{data.ticker}} | ${{data.purchasePrice}}</span>
+            <span *ngIf="data.hasOwnProperty('coupon')">{{data.issuer}} | ${{data.coupon}}</span>
+            <span *ngIf="data.hasOwnProperty('margin')">{{data.issuer}} | ${{data.contractValue}}</span>
+            <span *ngIf="data.hasOwnProperty('aum')">{{data.symbol}} | ${{data.ytdReturn}}</span>
+        </h3>
+    </div>
+
+    <button (click)="addStocks()" type="button" class="btn btn-outline-primary">total</button>
+    <br>
+    <br>
+    <p>{{reportData.total}}</p>
+
+
 </section>
+
+
+
