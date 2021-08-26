@@ -31,7 +31,6 @@ export class InvestmentComponent implements OnInit {
         this.total += val
       }
     }
-
     else if(this.paramObj.category == 'bond'){
       for(let i=0; i<this.reportData.length; i++){
         this.total += this.reportData[i].coupon
@@ -48,11 +47,6 @@ export class InvestmentComponent implements OnInit {
       }
     }
   }
-
-
-
-
-
 
 
 }

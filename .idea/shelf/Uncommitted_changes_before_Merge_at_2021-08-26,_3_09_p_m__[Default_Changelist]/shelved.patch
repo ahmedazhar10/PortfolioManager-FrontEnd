@@ -1,0 +1,17 @@
+Index: portfolio-manager-ang/src/app/app-routing.module.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CashAccountComponent } from \"./cash-account/cash-account.component\";\nimport { InvestmentComponent } from \"./investment/investment.component\";\n\n\nconst routes: Routes = [\n  {path:'cash-account', component:CashAccountComponent},\n  {path:'investment', component:InvestmentComponent, outlet:'investment'}\n\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- portfolio-manager-ang/src/app/app-routing.module.ts	(revision 6473f0a3b4a08b25891c947a80cd6367c08d8129)
++++ portfolio-manager-ang/src/app/app-routing.module.ts	(date 1630004924639)
+@@ -7,7 +7,6 @@
+ const routes: Routes = [
+   {path:'cash-account', component:CashAccountComponent},
+   {path:'investment', component:InvestmentComponent, outlet:'investment'}
+-
+ ];
+ 
+ @NgModule({
