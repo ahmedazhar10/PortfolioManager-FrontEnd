@@ -8,7 +8,7 @@ import { InvestmentComponent } from "./investment/investment.component";
 const routes: Routes = [
   {path:'', redirectTo: '/cash-account', pathMatch:'full'},
   {path:'cash-account', component:CashAccountComponent},
-  {path:'net-worth', component:NetWorthComponent}
+  {path:'net-worth', component:NetWorthComponent},
   {path:'cash-account', component:CashAccountComponent},
   {path:'investment', component:InvestmentComponent, outlet:'investment'}
 
