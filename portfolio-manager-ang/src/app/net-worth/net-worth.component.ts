@@ -1,6 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {NetWorthService} from 'src/services/net-worth.service';
 
+export interface NetWorthData {
+  id: number;
+  cashAccounts: CashAccounts;
+  userName: string;
+}
+export interface CashAccounts {
+  id: number;
+  institution: string;
+  accountType: string;
+  amount: number;
+}
+
 @Component({
   selector: 'app-net-worth',
   templateUrl: './net-worth.component.html',
@@ -8,16 +20,17 @@ import {NetWorthService} from 'src/services/net-worth.service';
 })
 export class NetWorthComponent implements OnInit {
 
-  public netWorthData = {}
+  public netWorthData:any = [{}]
+  
   constructor(private netWorthService:NetWorthService) { }
-
   ngOnInit(): void {
   }
 
   netWorthServiceCall(){
     this.netWorthService.getNetWorthData().subscribe((data:any)=> {
-      this.netWorthData = JSON.stringify(data)
+      this.netWorthData = data
     })
+    console.log(this.netWorthData);
   }
 
 

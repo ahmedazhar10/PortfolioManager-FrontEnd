@@ -2,7 +2,12 @@
 
 <button (click)="netWorthServiceCall()">Get Net Worth</button>
 <p>{{netWorthData ? netWorthData:netWorthData}}</p>
-<table class="table">
+
+
+<!-- <table class="table"> -->
+<div class="container">
+<table class="table"> <!-- table-striped -->
+  <!-- <thead class="thead-dark"> -->
   <thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
@@ -13,12 +18,58 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Harry Kane</td>
-      <td>Wells Fargo</td>
-      <td>Chequing</td>
-      <td>15000</td>
-    </tr>
+    <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td>
+    <!-- <tr *ngFor="let data of netWorthData"> -->
+    <!--  <th scope="row">{{ data.id | number}}</th> --> <!-- ID -->
+    <!--  <td>{{ data.userName | string }}</td> --> <!-- Name -->
+      <!-- <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> -->
+    <!--   <td>{{ data.cashAccounts.institution }}</td> -->  <!-- Institution -->
+    <!--   <td>{{ data.cashAccounts.accountType }}</td> --> <!-- Account Type -->
+    <!--   <td>{{ data.cashAccounts.amount }}</td> --> <!-- Amount -->
+    <!-- </tr> -->
   </tbody>
 </table>
+</div>
+<!-- 
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Country</th>
+    <th scope="col">Area</th>
+    <th scope="col">Population</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let country of countries; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>
+      <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px">
+      {{ country.name }}
+    </td>
+    <td>{{ country.area | number }}</td>
+    <td>{{ country.population | number }}</td>
+  </tr>
+  </tbody>
+</table>
+
+-->
+
+ 
+
+
+
+
+<!--
+
+
+    <button (click)="makeServiceCall()" type="button" class="btn btn-outline-primary">Go</button>
+<div *ngFor="let data of reportData">
+    <h3>
+      <span *ngIf="data.hasOwnProperty('ticker')">{{data.ticker}} | ${{data.purchasePrice}}</span>
+        <span *ngIf="data.hasOwnProperty('coupon')">{{data.issuer}} | ${{data.coupon}}</span>
+        <span *ngIf="data.hasOwnProperty('margin')">{{data.issuer}} | ${{data.contractValue}}</span>
+        <span *ngIf="data.hasOwnProperty('aum')">{{data.symbol}} | ${{data.ytdReturn}}</span>
+    </h3>
+</div>
+-->
