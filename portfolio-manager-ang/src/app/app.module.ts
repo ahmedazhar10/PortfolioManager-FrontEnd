@@ -11,6 +11,7 @@ import { NetWorthComponent } from './net-worth/net-worth.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
+import { InvestmentComponent } from './investment/investment.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FutureComponent,
     EtfComponent,
     CashAccountComponent,
-    NetWorthComponent
+    NetWorthComponent,
+    InvestmentComponent
   ],
   imports: [
     BrowserModule,
