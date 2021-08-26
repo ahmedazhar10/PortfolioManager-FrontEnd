@@ -10,8 +10,12 @@ import {NetWorthService} from 'src/services/net-worth.service';
 export class NetWorthComponent implements OnInit {
 
   public netWorthData: any = [{}]
+  public imgChart:any = null
+  public imgHarry:any = null
+  public home:any = null
   public totalNetWorth = 0.00
   public message = ""
+
   
   constructor(private netWorthService:NetWorthService) { }
   ngOnInit(): void {
@@ -25,9 +29,21 @@ export class NetWorthComponent implements OnInit {
     //console.log(this.netWorthData);
   }
 
-  calculateTotalNetWorth(){
-    this.totalNetWorth = 962456.08
+
+  showImg(){
+    this.imgChart = './assets/pieChart.png'
   }
+
+  showHarry() {
+    this.imgHarry = './assets/harryKane.jpeg'
+    this.home = "ITS COMING HOME"
+
+  }
+    calculateTotalNetWorth()
+    {
+      this.totalNetWorth = 962456.08
+    }
+
 
 
 }

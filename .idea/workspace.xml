@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4be8c36f-bd3e-4ed8-91ba-a1903cdef369" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/investment/investment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/investment/investment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/net-worth/net-worth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/net-worth/net-worth.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="yiheng" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,10 +117,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1451" y="176" key="SettingsEditor/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1629896997965" />
-    <state x="-1360" y="278" key="Vcs.Push.Dialog.v2" timestamp="1630018931433">
+    <state x="-1360" y="278" key="Vcs.Push.Dialog.v2" timestamp="1630020903794">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="278" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630018931433" />
+    <state x="-1360" y="278" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/1680.116.1080.810/0.0.1680.1050@-1920.0.1920.1080" timestamp="1630020903794" />
     <state x="-1260" y="166" width="600" height="711" key="find.popup" timestamp="1629927164493">
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
