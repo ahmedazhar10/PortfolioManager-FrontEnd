@@ -8,15 +8,15 @@ import {CashAccountService} from 'src/services/cash-account.service';
 })
 export class CashAccountComponent implements OnInit {
 
-  public reportData = {}
+  public cashAccountData = []
   constructor(private cashAccountService:CashAccountService) { }
-
   ngOnInit(): void {
   }
-
-  makeServiceCall(){
+  
+  cashAccountServiceCall(){
     this.cashAccountService.getCashData().subscribe((data:any)=> {
-      this.reportData = JSON.stringify(data)
+      this.cashAccountData = data
+      console.log(this.cashAccountData[0]);
     })
     }
 

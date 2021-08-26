@@ -1,4 +1,25 @@
-<p>cash-account works!</p>
+<button type="button" class="btn btn-primary" (click)="cashAccountServiceCall()">Get Cash Accounts</button>
 
-<button (click)="makeServiceCall()">Go</button>
-<p>{{reportData ? reportData:reportData}}</p>
+<!-- <table class="table"> -->
+<ng-container *ngIf="cashAccountData.length != 0">
+<table class="table"> <!-- table-striped -->
+  <!-- <thead class="thead-dark"> -->
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Institution</th>
+      <th scope="col">Account Type</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> <td> dummydata </td> -->
+    <tr *ngFor="let data of cashAccountData">
+    <th scope="row">{{ data['id'] }} </th> <!-- ID -->
+    <td>{{ data['institution'] }} </td> <!-- Institution -->
+    <td>{{ data['accountType'] }} </td> <!-- Account Type -->
+    <td>{{ data['amount'] }} </td> <!-- Amount -->
+   </tr> 
+  </tbody>
+</table>
+</ng-container>

@@ -1,13 +1,7 @@
-<p>net-worth works!</p>
+<button type="button" class="btn btn-primary" (click)="netWorthServiceCall()">Get Net Worth</button>
 
-<button (click)="netWorthServiceCall()">Get Net Worth</button>
-<!-- <p>{{netWorthData ? netWorthData:netWorthData}}</p> -->
-
-
-<!-- <table class="table"> -->
 <ng-container *ngIf="netWorthData.length != 0">
-<table class="table"> <!-- table-striped -->
-  <!-- <thead class="thead-dark"> -->
+<table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
