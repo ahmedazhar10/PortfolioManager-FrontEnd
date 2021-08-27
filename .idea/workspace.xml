@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4be8c36f-bd3e-4ed8-91ba-a1903cdef369" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/net-worth/net-worth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/net-worth/net-worth.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/cash-account/cash-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/cash-account/cash-account.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/investment/investment.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/investment/investment.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/investment/investment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/investment/investment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-manager-ang/src/app/net-worth/net-worth.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-manager-ang/src/app/net-worth/net-worth.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

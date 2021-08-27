@@ -2,10 +2,6 @@
     color:green;
 }
 
-.heading{
-    padding-left:90px;
-}
-
 .issuer{
     font-weight: bold;
     text-decoration: underline;
@@ -13,6 +9,29 @@
 
 .amt{
     font-weight:bold;
-    padding-left:60px;
     text-decoration: underline;
+}
+
+.investment-card{
+    width: 80%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: end;
+}
+
+.grid-container form{
+    padding-right: 10px;
+}
+
+.grid-container button{
+    margin-bottom: 1rem;
+    height: calc(1.5em + .75rem + 2px);
+}
+
+.investment-breakdown-grid{
+    display: grid;
+    grid-template-columns: 42% 58%;
 }

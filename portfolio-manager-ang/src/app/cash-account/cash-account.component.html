@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary" (click)="cashAccountServiceCall()">Get Cash Accounts</button>
+<button type="button" class="btn btn-primary" (click)="cashAccountServiceCall()" style="margin-bottom: 10px;">Get Cash Accounts</button>
 
 <!-- <table class="table"> -->
 <ng-container *ngIf="cashAccountData.length != 0">
@@ -23,8 +23,8 @@
   </tbody>
 </table>
 </ng-container>
-<br>
-<br>
-<button type="button" class="btn btn-primary" (click)="addAllCashAmounts()">Total Cash</button>
-<h3 class="total">{{totalAmount | currency}}</h3>
+<div style="margin-top: 15px">
+  <button type="button" style="margin-bottom: 8px" class="btn btn-primary margin-bottom-20" (click)="addAllCashAmounts()">Total Cash</button>
+  <h3 class="total">{{totalAmount | currency}}</h3>
+</div>
 

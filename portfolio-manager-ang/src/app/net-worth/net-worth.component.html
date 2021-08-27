@@ -1,7 +1,7 @@
-<button type="button" class="btn btn-primary" (click)="netWorthServiceCall()">Person</button>
+<button style="margin-bottom: 8px" type="button" class="btn btn-primary" (click)="netWorthServiceCall()">Person</button>
 
 <ng-container *ngIf="netWorthData.length != 0">
-<table class="table">
+<table class="table" style="margin-bottom: 20px">
   <thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
@@ -26,16 +26,17 @@
   </tbody>
 </table>
 
-    <br>
-    <button type="button" class="btn btn-primary" (click)="calculateTotalNetWorth()">Net worth?</button>
-    <h3 class="total">{{totalNetWorth | currency}}</h3>
+    <button style="margin-bottom: 8px" type="button" class="btn btn-primary" (click)="calculateTotalNetWorth()">Net worth?</button>
+    <h3 class="total" style="margin-bottom: 20px">{{totalNetWorth | currency}}</h3>
 
-    <button (click)="showImg()" type="button" class="btn btn-outline-primary">View Chart</button>
-    <img src="{{imgChart}}">
+    <div style="margin-bottom: 10px">
+        <button (click)="showImg()" type="button" class="btn btn-outline-primary">View Chart</button>
+    </div>
+    <img style="margin-bottom: 20px" src="{{imgChart}}">
     <br>
-    <br>
-    <br>
-    <button (click)="showHarry()" type="button" class="btn btn-outline-primary">Comments</button>
+    <div style="margin-bottom: 10px">
+        <button (click)="showHarry()" type="button" class="btn btn-outline-primary">Comments</button>
+    </div>
     <img src="{{imgHarry}}">
     <br>
     <h3>{{home}}</h3>
